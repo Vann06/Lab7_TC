@@ -1,0 +1,60 @@
+# ----- OS / editor -----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ----- Python -----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+.eggs/
+.build/
+dist/
+build/
+pip-wheel-metadata/
+.pytype/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual envs
+venv/
+.env/
+.env*/
+.venv/
+.venv*/
+
+# ----- Logs / temp -----
+*.log
+*.tmp
+*.cache/
+.cache/
+
+# ----- Notebooks (optional) -----
+.ipynb_checkpoints/
+
+# ----- Media (video) for the demo -----
+# Sube el video a YouTube (no listado) y pega el link en el README.
+# Evita subir archivos pesados al repo:
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# ----- Node (por si usas algo para el README/demo) -----
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# ----- OS binaries -----
+*.exe
+*.dll
+*.so
+*.dylib
