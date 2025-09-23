@@ -3,7 +3,7 @@
 import re
 
 _ARROW = r'(?:->|→)'   # una sola cadena regex que dice: o '->' o '→'
-_RHS_ATOM = r'(?:[A-Za-z0-9]+|ε|ϵ|eps|epsilon)'  # o palabra, o epsilon
+_RHS_ATOM = r'(?:[A-Za-z0-9]+|ε|ϵ)'  
 _RHS = rf'(?:{_RHS_ATOM}(?:\s*\|\s*{_RHS_ATOM})*)' # uno o más átomos separados por '|'
 PRODUCTION_RE = re.compile(
     rf'^\s*([A-Z])\s*{_ARROW}\s*({_RHS})\s*$'
