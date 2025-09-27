@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Ejercicio 1 - Laboratorio 7
 Carga, validación y eliminación de producciones ε
@@ -10,6 +9,16 @@ import sys
 
 from validator import validate_line, parse_line
 from epsilon import find_nullable, eliminate_epsilon, pretty_grammar
+
+try:
+    enc = sys.stdout.encoding or ''
+    if enc.lower() != 'utf-8':
+        reconfig = getattr(sys.stdout, 'reconfigure', None)
+        if callable(reconfig):
+            reconfig(encoding='utf-8')
+except Exception:
+    # Si falla, el usuario aún puede ejecutar manualmente
+    pass
 
 Symbols = Tuple[str, ...]
 Grammar = Dict[str, Set[Symbols]]
